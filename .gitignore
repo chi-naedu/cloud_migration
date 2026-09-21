@@ -1,0 +1,28 @@
+# Vagrant: local VM state, machine IDs and private SSH keys
+.vagrant/
+
+# Compiled Go binary (rebuilt from source; the pipeline will build it later)
+inventory-app
+
+# macOS / editor clutter
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets and local environment files
+.env
+*.env
+
+# Database dumps from the Phase 3 cutover (these contain real data)
+*.sql
+*.dump
+
+# Terraform (Phase 2/3)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+
+# Logs
+*.log
